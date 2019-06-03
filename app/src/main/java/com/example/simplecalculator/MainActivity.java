@@ -41,5 +41,123 @@ public class MainActivity extends AppCompatActivity {
         btn_clear = (Button) findViewById(R.id.btn_clear);
         ed1 = (EditText) findViewById(R.id.edText1);
 
+        btn_0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "0");
+            }
+        });
+
+        btn_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "1");
+            }
+        });
+
+        btn_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "2");
+            }
+        });
+
+        btn_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "3");
+            }
+        });
+
+        btn_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "4");
+            }
+        });
+
+        btn_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "5");
+            }
+        });
+
+        btn_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "6");
+            }
+        });
+
+        btn_7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "7");
+            }
+        });
+
+        btn_8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "8");
+            }
+        });
+
+        btn_9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + "9");
+            }
+        });
+
+        btn_dec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ed1.setText(ed1.getText() + ".");
+            }
+        });
+
+        btn_Add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (ed1 == null) {
+                    ed1.setText("");
+                } else {
+                    value1 = Float.parseFloat(ed1.getText() + "");
+                    mAddition = true;
+                    ed1.setText(null);
+                }
+            }
+        });
+
+        btn_Sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                value1 = Float.parseFloat(ed1.getText() + "");
+                mSubtract = true;
+                ed1.setText(null);
+            }
+        });
+
+        btn_Mul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                value1 = Float.parseFloat(ed1.getText() + "");
+                mMultiplication = true;
+                ed1.setText(null);
+            }
+        });
+
+        btn_Div.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                value1 = Float.parseFloat(ed1.getText() + "");
+                mDivision = true;
+                ed1.setText(null);
+            }
+        });
+
     }
 }
